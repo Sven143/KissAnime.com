@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/bg4.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    left: 29px;
+    bottom: 2px;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #EDB39D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgba(4,9,30,0.7);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links ul{
+        padding: 25px;
+    }
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.story{
+    width: 80%;
+    margin: auto;
+    left: 50;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.story p{
+    padding: 0;
+}
+
+.manga-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.manga-col img{
+    width: 100%;
+    border-radius: 5px;
+}
+.ren-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.ren-col img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ran-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.ran-col img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ron-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.ron-col img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.run-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 70px;
+}
+
+.run-col img{
+    width: 120%;
+    border-radius: 5px;
+}
+
+.footer-bottom{
+    background: transparent;
+    width: 80vw;
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 100;
+    font-weight: 200;
+    color: #EDB39D;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    border: none;
+    font-size: 13px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {background-color: transparent;}
